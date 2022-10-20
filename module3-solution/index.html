@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Module 3 Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="heading">Web Design, LLC</div>
+        <div class="ham" id="ham" onclick="toggleHam()">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+        </div>
+    </div>
+
+    <div class="buttons" id="button">
+        <a href="#section-a"><div class="but">Section A</div></a>
+        <a href="#section-b"><div class="but">Section B</div></a>
+        <a href="#section-c"><div class="but">Section C</div></a>
+    </div>
+    <header>Responsive Design</header>
+    <div class="main">
+        <div class="section sec-a" id="section-a">
+            <div class="title">Section A</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum.
+            </div>
+        </div> 
+        <div class="section sec-b" id="section-b">
+            <div class="title">Section B</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum.
+            </div>
+        </div>
+        <div class="section sec-c" id="section-c">
+            <div class="title">Section C</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum. <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate fugiat impedit recusandae rerum perspiciatis voluptas aliquid voluptatem pariatur amet repellendus, ut nulla eum itaque deleniti! Minima totam sapiente eum.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleHam() {
+            let buttonEl = document.getElementById("button")
+            let hamEl = document.getElementById("ham")
+            if (buttonEl.classList.contains("open")) {
+                buttonEl.classList.remove("open")
+                hamEl.classList.remove("open-ham")
+            } else {
+                buttonEl.classList.add("open")
+                hamEl.classList.add("open-ham")
+            }
+        }
+
+    </script>
+</body>
+</html>
